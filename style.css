@@ -2,6 +2,15 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600);
 
 /* Clearfix */
+
+@keyframes rainbow {
+    0% { background: #00BCD4; }
+    25% { background: #00C853; }
+    50% { background: #C62828; }
+    75% { background: #4527A0; }
+    100% { background: #00BCD4; }
+}
+
 @mixin clearfix {
   *zoom: 1;
   &:before,
@@ -20,7 +29,6 @@
 }
 
 body {
-  background: url("http://wallpaperstock.net/vibe-bokeh_wallpapers_22019_1920x1200.jpg");
   background-size: cover;
   background-attachment: fixed;
   
@@ -30,6 +38,8 @@ body {
   font-size: 100%;
   line-height: 1.8em;
   color: #333;
+  animation: rainbow 25s infinite;
+    user-select: none;
 }
 
 h1 {
